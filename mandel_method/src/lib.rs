@@ -51,6 +51,7 @@ pub fn scoped_thread_pool_(mandel_config: &MandelConfig, image: &mut [u32]) {
 }
 
 // The parallel version of the mandelbrot set calculation, uses rayon join.
+#[no_mangle]
 pub fn rayon_join(mandel_config: &MandelConfig, image: &mut [u32]) {
     rayon_helper(mandel_config, image, 0);
 }

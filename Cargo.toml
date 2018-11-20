@@ -12,3 +12,6 @@ mandel_method = {path = "mandel_method"}
 
 [profile.release]
 lto = true
+
+[lib]
+crate-type = ["cdylib"]
